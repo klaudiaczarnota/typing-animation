@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&family=Syne+Mono&display=swap" rel="stylesheet">
+
+<style>
+
+    html {
+        height: 100%;
+    }
+
+    body {
+        background: url(typing.jpg) center center no-repeat;
+        background-size: cover;
+        
+    }
+
+   
+
+    div {
+        font-family: 'Source Code Pro', monospace;
+        max-width: 80%;
+        margin: 40vh auto;
+        font-size: 35px;
+        letter-spacing: 1px;
+        text-align: center;
+        
+    }
+
+    .cursor {
+        opacity: 0;
+        transition: 0.2s;
+    }
+
+    .cursor.active {
+        opacity: 1;
+    }
+
+   @media only screen and (max-width: 768px) {
+       div {
+           font-size: 15px;
+       }
+   }
+
+</style>
+</head>
+<body>
+    <div>
+        <span class="text"></span><span class="cursor">|</span>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
